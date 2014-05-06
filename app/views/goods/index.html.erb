@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Description</th>
       <th>User</th>
       <th>Parent app</th>
       <th>App instance</th>
@@ -17,8 +18,9 @@
     <% @goods.each do |good| %>
       <tr>
         <td><%= good.name %></td>
-        <td><%= good.user %></td>
-        <td><%= good.parent_app %></td>
+        <td><%= good.description %></td>
+        <td><%#= good.user %></td>
+        <td><%#= good.parent_app %></td>
         <td><%= good.app_instance %></td>
         <td><%= link_to 'Show', good %></td>
         <td><%= link_to 'Edit', edit_good_path(good) %></td>

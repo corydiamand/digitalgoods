@@ -1,5 +1,6 @@
 class GoodsController < ApplicationController
   before_action :set_good, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :authenticate_user!
 
   # GET /goods
   # GET /goods.json

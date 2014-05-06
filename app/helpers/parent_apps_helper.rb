@@ -1,0 +1,2 @@
+module ParentAppsHelper
+end

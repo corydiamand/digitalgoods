@@ -1,0 +1,27 @@
+<h1>Listing parent_apps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parent_apps.each do |parent_app| %>
+      <tr>
+        <td><%= parent_app.name %></td>
+        <td><%= link_to 'Show', parent_app %></td>
+        <td><%= link_to 'Edit', edit_parent_app_path(parent_app) %></td>
+        <td><%= link_to 'Destroy', parent_app, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parent app', new_parent_app_path %>

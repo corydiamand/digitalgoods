@@ -1,0 +1,29 @@
+<%= form_for(@app_instance) do |f| %>
+  <% if @app_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@app_instance.errors.count, "error") %> prohibited this app_instance from being saved:</h2>
+
+      <ul>
+      <% @app_instance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :parent_app_id %><br>
+    <%= f.text_field :parent_app_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unique_identifier %><br>
+    <%= f.number_field :unique_identifier %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

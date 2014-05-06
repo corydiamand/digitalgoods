@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parent app:</strong>
+  <%= @app_instance.parent_app %>
+</p>
+
+<p>
+  <strong>Unique identifier:</strong>
+  <%= @app_instance.unique_identifier %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @app_instance.user %>
+</p>
+
+<%= link_to 'Edit', edit_app_instance_path(@app_instance) %> |
+<%= link_to 'Back', app_instances_path %>

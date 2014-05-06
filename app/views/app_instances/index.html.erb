@@ -1,0 +1,31 @@
+<h1>Listing app_instances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parent app</th>
+      <th>Unique identifier</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @app_instances.each do |app_instance| %>
+      <tr>
+        <td><%= app_instance.parent_app %></td>
+        <td><%= app_instance.unique_identifier %></td>
+        <td><%= app_instance.user %></td>
+        <td><%= link_to 'Show', app_instance %></td>
+        <td><%= link_to 'Edit', edit_app_instance_path(app_instance) %></td>
+        <td><%= link_to 'Destroy', app_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New App instance', new_app_instance_path %>

@@ -10,7 +10,7 @@
   <%= @good.description %>
 <p>
   <strong>User:</strong>
-  <%#= @good.user %>
+  <%= @good.user.inspect %>
 </p>
 
 <p>
@@ -20,7 +20,7 @@
 
 <p>
   <strong>App instance:</strong>
-  <%= @good.app_instance %>
+  <%= @good.app_instance.inspect %>
 </p>
 
 <%= link_to 'Edit', edit_good_path(@good) %> |

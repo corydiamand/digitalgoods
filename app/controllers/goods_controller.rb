@@ -33,7 +33,7 @@ class GoodsController < ApplicationController
         format.json { render action: 'show', status: :created, location: @good }
       else
         format.html { render action: 'new' }
-        format.json { render json: @good.errors, status: :unprocessable_entity }
+        format.json { render json: @good.errors.full_messages, status: :unprocessable_entity }
       end
     end
   end

@@ -53,6 +53,10 @@ heroku logs --app digitalgoods --tail
 ^this will give you a live streaming log of output from production
 
 
+STUFF
+
+Run 'annotate' every once in a while to add columns to model file
+
 
 
 

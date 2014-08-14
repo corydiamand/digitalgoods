@@ -3,7 +3,7 @@ Digitalgoods::Application.routes.draw do
 
   resources :parent_apps
 
-  devise_for :users
+  #devise_for :users
   resources :goods
 
   # The priority is based upon order of creation: first created -> highest priority.

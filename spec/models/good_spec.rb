@@ -7,6 +7,8 @@
 #  app_instance_id :integer
 #  created_at      :datetime
 #  updated_at      :datetime
+#  description     :text
+#  user_id         :integer
 #
 
 require 'spec_helper'

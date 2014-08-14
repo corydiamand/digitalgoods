@@ -26,3 +26,34 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+The production server is digitalgoods.herokuapp.com
+
+GIT:
+
+git status - show what work you've done
+git remote - view all your remote repositories
+git add . - add everything, you can also remove the period and specify individual file names
+git commit -m' '  put the name of the commit between the apostrophes
+git push origin master - push to github
+git push production master -
+push to heroku
+
+RAILS:
+
+'rails s' starts the server - ctrl-c to stop the server
+go to localhost:3000
+rake db:create - create your db
+rake db:migrate - run migrations to keep your db up to speed with everyone else's
+
+HEROKU
+
+heroku logs --app digitalgoods --tail
+^this will give you a live streaming log of output from production
+
+
+
+
+
+

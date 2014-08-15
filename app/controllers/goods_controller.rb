@@ -31,9 +31,11 @@ class GoodsController < ApplicationController
       if @good.save
         format.html { redirect_to @good, notice: 'Good was successfully created.' }
         format.json { render action: 'show', status: :created, location: @good }
+        puts "YES"
       else
         format.html { render action: 'new' }
         format.json { render json: @good.errors.full_messages, status: :unprocessable_entity }
+        puts "FUCK"
       end
     end
   end

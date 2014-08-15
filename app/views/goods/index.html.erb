@@ -18,8 +18,8 @@
     <% @goods.each do |good| %>
       <tr>
         <td><%= good.name %></td>
-        <td><%#= good.description %></td>
-        <td><%#= good.user %></td>
+        <td><%= good.description %></td>
+        <td><%= good.user %></td>
         <td><%#= good.parent_app %></td>
         <td><%= good.app_instance %></td>
         <td><%= link_to 'Show', good %></td>

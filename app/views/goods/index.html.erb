@@ -1,8 +1,9 @@
 <h1>Listing goods</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th>User</th>
@@ -17,6 +18,7 @@
   <tbody>
     <% @goods.each do |good| %>
       <tr>
+        <td><%= good.id %></td>
         <td><%= good.name %></td>
         <td><%= good.description %></td>
         <td><%= good.user %></td>
